@@ -21,6 +21,11 @@ public class Principal {
 		List<Invitaciones> listaInvitaciones = new ArrayList<Invitaciones>();
 
 		int menuPri, indice, subMenu;
+		
+		Invitaciones inv1 = new Invitaciones(20, "Alamos 26", 10, "Lopez", "14:00");
+		Invitaciones inv2 = new Invitaciones(21, "Chabacano 15", 10, "Perez", "14:00");
+		Invitaciones inv3 = new Invitaciones(30, "Alamos 26", 10, "Gonzalez", "14:00");
+		
 
 		do {
 			System.out.println("Menu Principal");
@@ -29,7 +34,11 @@ public class Principal {
 			System.out.println("3...Editar");
 			System.out.println("4... Eliminar");
 			System.out.println("5... Listar");
-			System.out.println("6... Salir");
+			System.out.println("6... Buscar por familia");
+			System.out.println("7... Contar registros");
+			System.out.println("8... Eliminar por familia");
+			System.out.println("9... Vaciar la lista");
+			System.out.println("10... Salir");
 
 			lectura = new Scanner(System.in);
 			menuPri = lectura.nextInt();
@@ -158,14 +167,82 @@ public class Principal {
 
 				break;
 			}
-			case 6: {
+			case 6: {							
+				System.out.println("Ingrese la familia que desea buscar");				
+				lectura=new Scanner(System.in);
+				familia = lectura.nextLine();
+				try {
+					for (int i=0; i<listaInvitaciones.size(); i++) {
+						if(listaInvitaciones.get(i).getFamilia().equals(familia)) {
+							System.out.println(listaInvitaciones.get(i));
+						}
+						}	
+				} catch (Exception e) {
+					// TODO: handle exception
+					System.out.println("Error con datos ingresados");
+				}		
+				break;
+			}
+			case 7: {
+				int count=0;
+				for (Invitaciones invitaciones : listaInvitaciones) {
+					count++;
+				}
+				
+				System.out.println("El numero total de registros es de: "+count);
+				break;
+			}
+			case 8: {
+				System.out.println("\n\nRegistros en la lista por indice");
+				for (int i = 0; i < listaInvitaciones.size(); i++) {
+					System.out.printf("\n[%d]" + listaInvitaciones.get(i).getFamilia(), i);
+				}
+
+				System.out.println("\n\nIngrese La famila a eliminar");
+				lectura = new Scanner(System.in);
+				familia = lectura.nextLine();
+				
+				for (int i=0; i<listaInvitaciones.size(); i++) {
+					if(listaInvitaciones.get(i).getFamilia().equals(familia)) {
+							listaInvitaciones.remove(i);
+							System.out.println("Se eliminó correctamente el registro");
+					}
+					}
+
+				break;
+			}
+			case 9: {
+				int respuesta;
+				System.out.println("¿Esta seguro que desea vaciar la lista?");
+				System.out.println("1...Si");
+				System.out.println("2...No");
+				System.out.println("3...Menu Principal");
+				
+				lectura = new Scanner(System.in);
+				respuesta = lectura.nextInt();
+				
+				switch (respuesta) {
+				case 1: {
+					listaInvitaciones.clear();					
+				break;	
+				}
+				case 2: {
+					System.out.println("No se han generado cambios");
+					break;	
+					}
+				default:
+					throw new IllegalArgumentException("Unexpected value: " + respuesta);
+				}
+				break;
+			}
+			case 10: {
 
 				break;
 			}
 			default:
 				throw new IllegalArgumentException("Unexpected value: " + menuPri);
 			}
-		} while (menuPri < 6);
+		} while (menuPri < 10);
 
 	}
 
