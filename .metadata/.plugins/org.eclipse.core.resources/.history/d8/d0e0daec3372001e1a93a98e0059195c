@@ -1,0 +1,15 @@
+import java.time.*;
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LocalDate ahora=LocalDate.now();
+		LocalDate evento;
+		
+		System.out.println(ahora);
+
+	}
+
+}

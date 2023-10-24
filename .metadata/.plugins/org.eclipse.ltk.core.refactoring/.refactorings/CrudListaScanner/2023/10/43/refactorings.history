@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Boletos.java&apos; to &apos;Invitaciones.java&apos;&#x0D;&#x0A;- Original project: &apos;CrudListaScanner&apos;&#x0D;&#x0A;- Original element: &apos;Boletos.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Invitaciones.java&apos;" description="Rename compilation unit &apos;Boletos.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Boletos.java" name="Invitaciones.java" references="false" stamp="1698093786083" version="1.0"/>
+</session>

@@ -1,0 +1,71 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Declarar variables
+		Scanner lectura = null;
+
+		int numeroInvitacion;
+		String direccion;
+		int numMesa;
+		String familia;
+		String horaInicio;
+
+		Invitaciones invitacion = null;
+
+		List<Invitaciones> listaInvitaciones = new ArrayList<Invitaciones>();
+		
+		int menuPri, indice, subMenu;
+		
+		do {
+			System.out.println("Menu Principal");
+			System.out.println("1...Alta");
+			System.out.println("2...Buscar");
+			System.out.println("3...Editar");
+			System.out.println("4... Eliminar");
+			System.out.println("5... Listar");
+			System.out.println("6... Salir");
+			
+			lectura= new Scanner(System.in);
+			menuPri=lectura.nextInt();
+			
+			
+			switch (menuPri) {
+			case 1: {
+				
+				break;
+			}
+case 2: {
+				
+	break;
+			}
+case 3: {
+	
+	break;
+}
+case 4: {
+	
+	break;
+}
+case 5: {
+	
+	break;
+}
+case 6: {
+	
+	break;
+}
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + key);
+			}
+		}while(menuPri<6);
+		
+
+	}
+
+}

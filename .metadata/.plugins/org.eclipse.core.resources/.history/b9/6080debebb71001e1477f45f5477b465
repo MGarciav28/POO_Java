@@ -1,0 +1,9 @@
+
+public class Mascotas {
+//Atributos
+	String especie;
+	String nombre;
+	String color;
+	int edad;
+	String raza;
+}

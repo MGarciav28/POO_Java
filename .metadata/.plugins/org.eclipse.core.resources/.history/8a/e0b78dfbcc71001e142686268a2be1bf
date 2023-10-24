@@ -1,0 +1,21 @@
+
+public class principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Television tv1 = new Television();
+tv1.marca = "LG"; 
+tv1.id = "SE1541";
+tv1.dimension = 45.5;
+tv1.smart = false; 
+tv1.precio = 17500.80;
+
+System.out.println("Catracteristicas de la TV 1");
+System.out.println("Marca: " + tv1.marca);
+System.out.println("Modelo: " + tv1.id);
+System.out.println("Dimension: " + tv1.dimension);
+System.out.println("Precio: " + tv1.precio);
+System.out.println("");
+	}
+
+}

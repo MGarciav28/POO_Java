@@ -1,0 +1,18 @@
+
+public class Alumno {
+String nombre;
+String apellido;
+float colegiatura;
+int beca;
+String grupo;
+public Alumno(String nombre, String apellido, float colegiatura, int beca, String grupo) {
+	this.nombre = nombre;
+	this.apellido = apellido;
+	this.colegiatura = colegiatura;
+	this.beca = beca;
+	this.grupo = grupo;
+}
+
+
+	
+}

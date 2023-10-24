@@ -1,0 +1,14 @@
+import java.time.*;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LocalDate ahora=LocalDate.now();
+		LocalDate evento=LocalDate.of(2024, 8, 12);
+		
+		System.out.println("Hoy es: "+ahora+ " Y el magno evento es el dia "+evento);
+
+	}
+
+}

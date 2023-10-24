@@ -1,0 +1,28 @@
+
+public class Mascotas {
+//Atributos
+	String especie;
+	String nombre;
+	String color;
+	int edad;
+	String raza;
+	
+	//Constructor vacio -- Para inicializar las variables del ojeto
+	//y para crear las instancias de clase
+	public Mascotas() {
+	}
+
+	
+	//Constructor con todos los parametros
+	public Mascotas(String especie, String nombre, String color, int edad, String raza) {
+		this.especie = especie;
+		this.nombre = nombre;
+		this.color = color;
+		this.edad = edad;
+		this.raza = raza;
+	}
+	
+	
+	
+
+}

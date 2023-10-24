@@ -1,0 +1,13 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Coleccion de objetos
+		Empleados emp1 = new Empleados(1, "Miguel", "Garcia", "Angel", "miguel@gmail.com", 522144227l);
+		Empleados emp2 = new Empleados(1, "Leo", "Perez", "Ortiz", "leo@gmail.com", 524133247l);
+		Empleados emp3 = new Empleados(1, "Simon", "Salas", "Rico", "simon@gmail.com", 23009127l);
+	}
+
+}
